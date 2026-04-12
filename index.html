@@ -19,8 +19,8 @@
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <!--isijudul-->
+            <a href="#" class="nav  _logo">
+                Karlina <span>Ayu</span> <span>Wulandari</span>
             </a>
 
             <div class="nav_menu" id="nav-menu">
@@ -54,8 +54,68 @@
             </div>
         </nav>
     </header>
+
+    <main class="main">
+            <section class="home section" id="home">
+                <div class="home_container container grid">
+                    <div class="home_content">
+                        <div class="home_data">
+                            <h3 class="home_subtitle">
+                                Hello, <span>I'm</span>
+                            </h3>
+
+                            <h1 class="home_title">Karlina Ayu Wulandari</h1>
+
+                            <h3 class="home_education">Front-end Developer</h3>
+
+                            <p class="home_description">With blabla bla</p>
+
+                            <a href="#contact" class="button">Contact Me!</a>
+                        </div>
+
+                        <div class="home_social">
+                            <a href="https://github.com/karlinna" target="_blank" class="home_social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+
+                            <a href="" target="_blank" class="home_social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home_image">
+                        <svg class="home_blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <pattern id="img" patternUnits="userSpaceOnUse" width="500" height="500">
+                                <image href="https://picsum.photos/500" width="500" height="500"/>
+                                </pattern>
+                            </defs>
+
+                            <mask id="blob">
+                                <rect width="100%" height="100%" fill="black"/>
+                                <path fill="white"
+                                d="M263 47C300 40 350 80 360 130C370 180 330 250 280 280C230 310 170 300 130 250C90 200 100 130 150 90C200 50 230 60 263 47Z"/>
+                            </mask>
+                            
+                            <!--insert photo recommend size: 640 x 940-->
+                            <g mask="url(#blob)">
+                                <rect width="100%" height="100%" fill="url(#img)" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section class="about section" id="about">
+
+            </section>
+            <section class="projects section" id="projects">
+
+            </section>
+            <section class="contact section" id="contact">
+
+            </section>
+    </main>
+
 </body>
 </html>
-
-
-<!--BARU MAU SAMPAI SECTION HOME-->

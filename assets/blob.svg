@@ -1,0 +1,20 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <pattern id="img" patternUnits="userSpaceOnUse" width="500" height="500">
+      <image href="https://picsum.photos/500" width="500" height="500"/>
+    </pattern>
+  </defs>
+
+  <mask id="blob">
+    <rect width="100%" height="100%" fill="black"/>
+    <path fill="white"
+      d="M263 47C300 40 350 80 360 130C370 180 330 250 280 280C230 310 170 300 130 250C90 200 100 130 150 90C200 50 230 60 263 47Z"/>
+  </mask>
+
+    <!--insert photo recommend size: 640 x 940-->
+  <g mask="url(#blob)">
+    <rect width="100%" height="100%" fill="url(#img)" />
+  </g>
+
+</svg>
