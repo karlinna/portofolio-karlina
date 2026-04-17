@@ -15,8 +15,8 @@
     for more color: https://colors.dopely.top/
     */
 
-    --hue: 210;
-    --first-color: hsl(var(--hue), 100%, 70%);
+    --hue: 212;
+    --first-color: hsl(var(--hue), 100%, 44%);
     --first-color-alt: hsl(var(--hue), 56%, 35%);
     --title-color: hsl(228, 8%, 95%);
     --text-color: hsl(228, 8%, 65%);
@@ -217,6 +217,24 @@ img, svg{
     right: 0;
 }
 
+/*add blur header*/
+.blur-header{
+    background-color: transparent;
+}
+
+.blur-header::after{
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+    background-color: hsla(0, 0%, 10%, .3);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px); /*safari*/
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 /*home*/
 .home{
     background-color: var(--container-color);
@@ -283,10 +301,10 @@ img, svg{
     filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
 }
 
-/* .home_img{ adjust your photo here
-    width: 300px;
-    transform: translateX(-40px);
-} */
+.home_img{
+    width: 500px;
+    height: 500px;
+}
 
 /*====button====*/
 .button{
@@ -295,6 +313,7 @@ img, svg{
     padding: 1rem 1.75rem;
     color: var(--title-color);
     font-weight: var(--font-medium);
+    border-radius: 10px;
     transition: box-shadow .4s;
 }
 
@@ -303,3 +322,81 @@ img, svg{
 }
 
 /*====about====*/
+.about_container{
+    row-gap: 2.5rem;
+}
+
+.about_data{
+    text-align: center;
+}
+
+.about_description{
+    margin-bottom: 2rem;
+}
+
+/*projects*/
+.projects{
+    background-color: var(--container-color);
+}
+
+.projects_container{
+    row-gap: 2rem;
+    justify-content: center;
+    padding-block: 1rem;
+}
+
+.projects_card{
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.projects_img{
+    width: 100%;
+    height: 100%;
+}
+
+.projects_modal{
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,
+     hsla(0, 0%, 0%, 0%) 0%,
+      hsla(var(--hue), 70%, 40%, .8) 120%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: bottom .4s;
+}
+
+.projects_subtitle,
+.projects_button{
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+}
+
+.projects_title{
+    font-size: var(--h2-font-size);
+    margin-bottom: .75rem;
+}
+
+.projects_button{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.projects_button i{
+    font-size: 1.25rem;
+}
+
+.projects_card:hover .projects_modal{
+    bottom: 0;
+}
