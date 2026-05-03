@@ -68,7 +68,7 @@
 
                             <h3 class="home_education">Front-end Developer</h3>
 
-                            <p class="home_description">Saya membantu membuat website yang menarik, cepat, dan nyaman digunakan.</p>
+                            <p class="home_description">Saya sedang belajar untuk membuat website yang menarik, cepat, dan nyaman digunakan.</p>
 
                             <a href="#contact" class="button">Hubungi Saya</a>
                         </div>
@@ -85,28 +85,29 @@
                     </div>
 
                     <div class="home_image">
-                        <svg class="home_blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="home_blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <defs>
-                                <pattern id="img" patternUnits="userSpaceOnUse" width="500" height="500">
-                                <image href="https://picsum.photos/500" width="500" height="500"/>
-                                </pattern>
+                                <mask id="blobMask">
+                                    <path fill="white" 
+                                        d="M61.9,-50C76.4,-31.1,81.7,-5.6,77.1,18.7C72.4,43.1,57.8,66.3,36.3,77.4C14.9,88.5,-13.4,87.5,-34.9,75.9C-56.5,64.2,-71.3,41.9,-76.1,18.1C-81,-5.8,-76,-31.2,-61.6,-49.9C-47.3,-68.7,-23.6,-80.9,0,-80.9C23.7,-80.9,47.3,-68.8,61.9,-50Z" 
+                                        transform="translate(100 100)" />
+                                </mask>
                             </defs>
 
-                            <mask id="blob">
-                                <rect width="100%" height="100%" fill="black"/>
-                                <path fill="white"
-                                d="M263 47C300 40 350 80 360 130C370 180 330 250 280 280C230 310 170 300 130 250C90 200 100 130 150 90C200 50 230 60 263 47Z"/>
-                            </mask>
-                            
-                            <!--insert photo recommend size: 640 x 940-->
-                            <g mask="url(#blob)">
+                            <path d="M61.9,-50C76.4,-31.1,81.7,-5.6,77.1,18.7C72.4,43.1,57.8,66.3,36.3,77.4C14.9,88.5,-13.4,87.5,-34.9,75.9C-56.5,64.2,-71.3,41.9,-76.1,18.1C-81,-5.8,-76,-31.2,-61.6,-49.9C-47.3,-68.7,-23.6,-80.9,0,-80.9C23.7,-80.9,47.3,-68.8,61.9,-50Z" 
+                                transform="translate(100 100)" />
+
+                            <g mask="url(#blobMask)">
                                 <image 
-                                    href="assets/img/fotopklcrop.jpeg" 
-                                    width="100%" 
-                                    height="100%" 
+                                    xlink:href="assets/img/fotopkl.jpeg" 
+                                    width="165" 
+                                    height="165"
+                                    x="20" 
+                                    y="20"
                                     preserveAspectRatio="xMidYMid slice" />
                             </g>
                         </svg>
+
                     </div>
                 </div>
             </section>
@@ -120,7 +121,7 @@
                         </h2>
 
                         <p class="about_description">
-                            Saya adalah siswa SMKN 4 Bandung yang memiliki minat besar di bidang pengembangan web, khususnya front-end.
+                            Saya adalah siswi SMKN 4 Bandung yang memiliki minat besar di bidang pengembangan web, khususnya front-end.
                             Saya senang membuat tampilan website yang menarik dan mudah digunakan.  
                         </p>
 
@@ -144,7 +145,7 @@
 
                             <h2 class="projects_title">CRUD Laravel</h2>
 
-                            <a href="#" class="projects_button">
+                            <a href="projects1.html" class="projects_button">
                                 View demo <i class="ri-external-link-line"></i>
                             </a>
                         </div>
@@ -158,7 +159,7 @@
 
                             <h2 class="projects_title">Sistem sederhana untuk mengolah data buku dan anggota</h2>
 
-                            <a href="#" class="projects_button">
+                            <a href="projects2.html" class="projects_button">
                                 View demo <i class="ri-external-link-line"></i>
                             </a>
                         </div>
