@@ -1,26 +1,22 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#FF0066" d="M61.9,-50C76.4,-31.1,81.7,-5.6,77.1,18.7C72.4,43.1,57.8,66.3,36.3,77.4C14.9,88.5,-13.4,87.5,-34.9,75.9C-56.5,64.2,-71.3,41.9,-76.1,18.1C-81,-5.8,-76,-31.2,-61.6,-49.9C-47.3,-68.7,-23.6,-80.9,0,-80.9C23.7,-80.9,47.3,-68.8,61.9,-50Z" 
-  transform="translate(100 100)" />
+<svg class="home_blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <mask id="blobMask">
+            <path fill="white" 
+                  d="M61.9,-50C76.4,-31.1,81.7,-5.6,77.1,18.7C72.4,43.1,57.8,66.3,36.3,77.4C14.9,88.5,-13.4,87.5,-34.9,75.9C-56.5,64.2,-71.3,41.9,-76.1,18.1C-81,-5.8,-76,-31.2,-61.6,-49.9C-47.3,-68.7,-23.6,-80.9,0,-80.9C23.7,-80.9,47.3,-68.8,61.9,-50Z" 
+                  transform="translate(100 100)" />
+        </mask>
+    </defs>
 
-  <defs>
-    <pattern id="img" patternUnits="userSpaceOnUse" width="500" height="500">
-      <image href="https://picsum.photos/500" width="500" height="500"/>
-    </pattern>
-  </defs>
+    <path d="M61.9,-50C76.4,-31.1,81.7,-5.6,77.1,18.7C72.4,43.1,57.8,66.3,36.3,77.4C14.9,88.5,-13.4,87.5,-34.9,75.9C-56.5,64.2,-71.3,41.9,-76.1,18.1C-81,-5.8,-76,-31.2,-61.6,-49.9C-47.3,-68.7,-23.6,-80.9,0,-80.9C23.7,-80.9,47.3,-68.8,61.9,-50Z" 
+          transform="translate(100 100)" />
 
-  <mask id="blob">
-    <rect width="100%" height="100%" fill="black"/>
-    <path fill="white"
-      d="M263 47C300 40 350 80 360 130C370 180 330 250 280 280C230 310 170 300 130 250C90 200 100 130 150 90C200 50 230 60 263 47Z"/>
-  </mask>
-
-    <!--insert photo recommend size: 640 x 940-->
-  <g mask="url(#blob)">
-    <image 
-        href="assets/img/fotopklcrop.jpeg" 
-        width="100%" 
-        height="100%" 
-        preserveAspectRatio="xMidYMid slice" />
-</g>
-
+    <g mask="url(#blobMask)">
+        <image 
+            xlink:href="assets/img/fotopkl.jpeg" 
+            width="165" 
+            height="165"
+            x="20" 
+            y="20"
+            preserveAspectRatio="xMidYMid slice" />
+    </g>
 </svg>
