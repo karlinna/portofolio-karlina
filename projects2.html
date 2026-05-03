@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Perpustakaan</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>SISTEM PERPUSTAKAAN</th>
+            <th>Deskripsi</th>
+            <th>Gambar</th>
+        </tr>
+        @foreach($projects as $project)
+        <tr>
+            <td>{{ $project->nama }}</td>
+            <td>{{ $project->deskripsi }}</td>
+            <td><img src="{{ asset('img/gambar' . $project->gambar) }}" alt="Gambar Project" width="100"></td>
+        </tr>
+        @endforeach
+    </table>
+</body>
+</html>
