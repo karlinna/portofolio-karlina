@@ -302,6 +302,7 @@ img, svg{
 
 .home_blob{
     width: 320px;
+    height: 320px;
     fill: var(--first-color);
     filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2));
 }
@@ -327,7 +328,10 @@ img, svg{
 }
 
 /*====about====*/
-.about_container{
+.about_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
     row-gap: 2.5rem;
 }
 
@@ -336,7 +340,7 @@ img, svg{
 }
 
 .about_description{
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 /*projects*/
@@ -368,8 +372,8 @@ img, svg{
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg,
-     hsla(0, 0%, 0%, 0%) 0%,
-      hsla(var(--hue), 70%, 40%, .8) 120%);
+    hsla(0, 0%, 0%, 0%) 0%,
+    hsla(var(--hue), 70%, 40%, .8) 120%);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 1rem;
@@ -408,6 +412,8 @@ img, svg{
 
 /*contact*/
 .contact_container{
+    display: grid;
+    justify-content: center;
     padding-top: 1rem;
 }
 
@@ -434,20 +440,22 @@ img, svg{
 .contact_form textarea{
     resize: none;
     height: 11rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
 }
 
 .contact_button{
     justify-self: center;
     cursor: pointer;
+    padding: 1rem 1.75rem;
+    font-weight: var(--font-semi-bold);
 }
 
-.contct_message{
+.contact_message{
     position: absolute;
     left: 0;
     bottom: 4.5rem;
     color: var(--title-color);
-    font-size: var(--small-font-size);  
+    font-size: var(--small-font-size);
 }
 
 /*footer*/
