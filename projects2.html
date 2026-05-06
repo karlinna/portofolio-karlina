@@ -3,22 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Perpustakaan</title>
+    <title>Project Detail</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>SISTEM PERPUSTAKAAN</th>
-            <th>Deskripsi</th>
-            <th>Gambar</th>
-        </tr>
-        @foreach($projects as $project)
-        <tr>
-            <td>{{ $project->nama }}</td>
-            <td>{{ $project->deskripsi }}</td>
-            <td><img src="{{ asset('img/gambar' . $project->gambar) }}" alt="Gambar Project" width="100"></td>
-        </tr>
-        @endforeach
-    </table>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html" class="nav_logo">My<span>Portfolio</span></a>
+
+        <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+                <li><a href="projects.html" class="nav_link">Projects</a></li>
+            </ul>
+
+            <div class="nav_close" id="nav-close">
+                <i class='bx bx-x'></i>
+            </div>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+
+<section class="section">
+    <div class="container grid">
+
+        <div>
+            <img src="img/project1.jpg" style="border-radius: 1rem;">
+        </div>
+
+        <div>
+            <h2 class="section_title">Sistem Perpustakaan</h2>
+
+            <p class="home_description">
+                Aplikasi Sistem Perpustakaan adalah solusi digital untuk mengelola koleksi buku dan aktivitas peminjaman di perpustakaan.
+                User dapat mencari buku, melihat detail, dan melakukan peminjaman.
+                Admin dapat mengelola koleksi buku, peminjaman, dan pengembalian.
+            </p>
+
+            <a href="https://drive.google.com/file/d/1ps6WeadQMGMiMZrBXhndntCuNkSz_gvr/view?usp=sharing" target="_blank" class="button">
+                Lihat Blog <i class='bx bx-link-external'></i>
+            </a>
+
+            <br><br>
+
+            <a href="projects.html" class="projects_button">
+                ← Back to Projects
+            </a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- SCROLL UP -->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class='bx bx-up-arrow-alt'></i>
+</a>
+
+<script src="script.js"></script>
 </body>
 </html>
